@@ -1,0 +1,442 @@
+.board-container-main .board .board-section .add-new-task-button-container button, .board-container-main .board-header button.add-new-task {
+  color: #b48ee6;
+  border: 2px solid #b48ee6;
+  background: none;
+  padding: 20px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Aref Ruqaa Ink", sans-serif;
+  font-size: 17px;
+}
+
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .num-players-assigned-left-rendering, .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .user-initials-display {
+  color: #ffffff;
+  margin: 0;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 50%;
+  width: 14px;
+  height: auto;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  font-weight: 700;
+}
+
+.projects-tracker-container-main {
+  min-height: 100vh;
+  height: max-content;
+  background-color: #f6f6f6;
+}
+
+.basic-info-container-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.page-direction p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.page-title {
+  display: flex;
+  align-items: flex-end;
+}
+.page-title #page-heading-editor {
+  background-color: transparent;
+  border: 0;
+  padding: 5px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  width: 180px;
+  position: relative;
+  top: 5px;
+}
+.page-title #page-heading-editor:hover {
+  cursor: pointer;
+}
+
+.meta-page-info {
+  display: flex;
+  margin-top: 5px;
+}
+.meta-page-info span {
+  margin-left: 5px;
+}
+.meta-page-info #active-project {
+  color: #17bb92;
+}
+.meta-page-info .meta-info-section {
+  margin-left: 25px;
+  font-size: 15px;
+  width: max-content;
+}
+.meta-page-info .meta-info-section span {
+  width: 100px;
+}
+.meta-page-info .meta-info-section:first-child {
+  margin-left: 0px;
+}
+.meta-page-info .meta-info-section:last-child {
+  width: 140px;
+}
+
+.time-info {
+  display: flex;
+  height: max-content;
+  width: max-content;
+}
+.time-info #notify-button {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #b48ee6;
+  border-radius: 48%;
+  position: relative;
+  top: 3px;
+  position: relative;
+  right: 12px;
+  color: #b48ee6;
+  cursor: pointer;
+}
+.time-info #notify-button:hover {
+  filter: brightness(90%);
+}
+.time-info .time-display-container {
+  display: flex;
+  background: #cccbcb;
+  padding: 0px 30px;
+  border-radius: 100px;
+  width: max-content;
+  height: 42px;
+  position: relative;
+  top: 3px;
+}
+.time-info .time-display-container #calendar-icon {
+  font-size: 17px;
+  margin-top: 10px;
+  position: relative;
+  top: 2px;
+  position: relative;
+  right: 15px;
+  color: #cccbcb;
+  filter: brightness(55%);
+  cursor: pointer;
+}
+.time-info .time-display-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.time-info .time-display-container div p {
+  margin: 0;
+  padding: 0;
+  color: #cccbcb;
+  filter: brightness(55%);
+  font-size: 13px;
+}
+.time-info .time-display-container div #title {
+  font-weight: 700;
+}
+.time-info .time-display-container div #result {
+  position: relative;
+  bottom: 3px;
+  font-size: 12px;
+}
+
+.stat-container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  margin-top: 10px;
+}
+.stat-container-main .stat-card {
+  border: 1px solid #cccbcb;
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 200px;
+}
+.stat-container-main .stat-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  color: #cccbcb;
+  filter: brightness(70%);
+}
+.stat-container-main .stat-card .card-header p {
+  margin: 0;
+  font-weight: 700;
+}
+.stat-container-main .stat-card .card-header .stat-card-icon {
+  position: relative;
+  top: 7px;
+}
+.stat-container-main .stat-card .card-value {
+  display: flex;
+}
+.stat-container-main .stat-card .card-value h1 {
+  margin: 0;
+  font-size: 25px;
+}
+.stat-container-main .stat-card .card-value h1 span {
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  position: relative;
+  left: 5px;
+}
+.stat-container-main #earnings-card h1 span,
+.stat-container-main #cost-card h1 span {
+  position: relative;
+  left: initial;
+  position: relative;
+  right: 1px;
+}
+.stat-container-main #productivity-card .card-header p,
+.stat-container-main #productivity-card .card-header i {
+  color: #00c8ff;
+}
+.stat-container-main #productivity-card .productivity-level-container {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  color: #17bb92;
+  filter: brightness(80%);
+  position: relative;
+  top: 15px;
+  position: relative;
+  left: 10px;
+}
+.stat-container-main #productivity-card .productivity-level-container p {
+  margin: 0;
+}
+.stat-container-main #productivity-card .productivity-level-container i {
+  position: relative;
+  top: 10px;
+  position: relative;
+  right: 5px;
+}
+
+.board-container-main {
+  border: 1px solid #cccbcb;
+  width: 1100px;
+  margin: auto;
+  margin-top: 25px;
+  user-select: none;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.board-container-main .board-header {
+  width: 250px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.board-container-main .board-header p {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 15px 0px;
+}
+.board-container-main .board-header button.add-new-task {
+  width: 150px;
+  height: 40px;
+}
+.board-container-main .board-header button.add-new-task span {
+  position: relative;
+  bottom: 2px;
+}
+.board-container-main .board-header button.add-new-task:hover {
+  filter: brightness(85%);
+}
+.board-container-main .board-header button.add-new-task:active {
+  scale: 0.99;
+}
+.board-container-main .board {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #cccbcb;
+}
+.board-container-main .board .board-section {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 420px;
+  margin: 8px auto;
+  background: #ebebeb;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.board-container-main .board .board-section .board-section-header {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d1c1c;
+}
+.board-container-main .board .board-section .projects-list {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 95%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container {
+  width: 100%;
+  min-height: 65px;
+  height: max-content;
+  border: 1px solid #cccbcb;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #ffffff;
+  user-select: none;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-header {
+  display: flex;
+  justify-content: space-between;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-header h1 {
+  font-size: 13px;
+  margin: 0;
+  position: relative;
+  top: 2px;
+  position: relative;
+  left: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-header h1:hover {
+  color: #cccbcb;
+  filter: brightness(60%);
+}
+.board-container-main .board .board-section .projects-list .project-container .project-header i {
+  transform: rotate(90deg);
+  position: relative;
+  top: 2px;
+  position: relative;
+  right: 20px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees {
+  display: flex;
+  position: relative;
+  left: 7px;
+  min-width: 100px;
+  margin-bottom: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .user-profile-image-display {
+  width: 22px;
+  height: auto;
+  border-radius: 50%;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .user-meta-info {
+  margin-right: 5px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .num-players-assigned-left-rendering {
+  width: 15px;
+  font-size: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container {
+  display: flex;
+  position: relative;
+  right: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .time-elapsed-container {
+  display: flex;
+  margin-right: 10px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .time-elapsed-container i {
+  color: #cccbcb;
+  position: relative;
+  top: 4px;
+  position: relative;
+  right: 5px;
+  font-size: 15px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .time-elapsed-container .time-elapsed-value {
+  margin: 0;
+  font-size: 13px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .priority-container .priority-value {
+  cursor: initial;
+  margin: 0;
+  width: 9px;
+  height: auto;
+  padding: 3px;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  fill: #df9774;
+  background: #fadacb;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .priority-container #high {
+  fill: #df510a;
+  background: #eeb79c;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-due-date-container {
+  display: flex;
+  border-radius: 5px;
+  height: 20px;
+  padding: 0px 5px;
+  background: #dfc8fd;
+  color: #6f00ff;
+  margin: 1px 0px 8px 10px;
+  align-items: center;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-due-date-container i {
+  font-size: 12px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-due-date-container h1 {
+  margin: 0;
+  font-size: 9px;
+  margin-left: 9px;
+  position: relative;
+  bottom: 1px;
+}
+.board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-due-date-container h1 span {
+  font-weight: 700;
+}
+.board-container-main .board .board-section .projects-list .project-container:first-child {
+  margin-top: 0px;
+}
+.board-container-main .board .board-section .add-new-task-button-container {
+  margin: auto;
+  position: relative;
+  top: 8px;
+}
+.board-container-main .board .board-section .add-new-task-button-container button {
+  border: none;
+  color: #cccbcb;
+  filter: brightness(40%);
+}
+.board-container-main .board .board-section .add-new-task-button-container button i {
+  font-size: 12px;
+}
+.board-container-main .board .board-section .add-new-task-button-container button span {
+  font-size: 15px;
+}
+.board-container-main .board .board-section .add-new-task-button-container button:hover {
+  filter: brightness(65%);
+}
+
+.hide-project {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=ProjectsTracker.css.map */

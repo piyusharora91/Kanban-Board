@@ -1,0 +1,93 @@
+#project-tracking-nav-link-container, .nav-links {
+  width: 100%;
+  height: max-content;
+  font-weight: 700;
+  color: #cccbcb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.main-nav-container {
+  width: 250px;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 5;
+}
+
+.logo-container {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  bottom: 6px;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  position: relative;
+  bottom: 10px;
+}
+
+.nav-links:hover {
+  color: #1d1c1c;
+  filter: brightness(95%);
+  background-color: #f6f6f6;
+}
+
+.nav-link-icon {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.nav-link-text {
+  margin-left: 30px;
+  font-size: 15px;
+  position: relative;
+  bottom: 3px;
+}
+
+#dashboard-nav-link-container {
+  border-top: 1.5px solid #cccbcb;
+}
+
+#project-tracking-nav-link-container {
+  border-left: 5px solid #b48ee6;
+}
+#project-tracking-nav-link-container #project-tracking-icon {
+  color: #b48ee6;
+}
+#project-tracking-nav-link-container .nav-link-text {
+  color: #1d1c1c;
+}
+
+.user-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 157px;
+  margin-bottom: 17.5px;
+}
+.user-container #user-image {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+.user-container #user-name {
+  margin: auto;
+  color: #cccbcb;
+  font-weight: 700;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=NavBar.css.map */

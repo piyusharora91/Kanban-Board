@@ -1,0 +1,67 @@
+
+        'design-homepage': {
+            'users': [profileUsers['maria-jones'], profileUsers['joe-geller'], profileUsers['meenu-singh'], profileUsers['amelia-eiger'], profileUsers['jean-mario']],
+            'timeElapsed': '00:00:00 h',
+            'priority': 'high',
+            'dueDate': ''
+        },
+        'change-old-app-icon': {
+            'users': [profileUsers['roghaye-safari'], profileUsers['jean-mario']],
+            'timeElapsed': '00:00:00 h',
+            'priority': 'low',
+            'dueDate': ''
+        },
+        'UI-styleguide': {
+            'users': [profileUsers['jean-mario']],
+            'timeElapsed': '12:24:49 h',
+            'priority': 'high',
+            'dueDate': ''
+        },
+        'new-look-of-calendar': {
+            'users': [profileUsers['maria-jones'], profileUsers['amelia-eiger']],
+            'timeElapsed': '21:32:54 h',
+            'priority': 'high',
+            'dueDate': '27 Jul'
+        },
+        'interactions-design': {
+            'users': [profileUsers['maria-jones'], profileUsers['ashley-riley']],
+            'timeElapsed': '14:29:23 h',
+            'priority': 'low',
+            'dueDate': ''
+        },
+        'dashboard': {
+            'users': [profileUsers['joe-geller'], profileUsers['meenu-singh']],
+            'timeElapsed': '16:29:23 h',
+            'priority': 'high',
+            'dueDate': ''
+        },
+        'usability-testing': {
+            'users': [profileUsers['adisa-duric']],
+            'timeElapsed': '12:24:48 h',
+            'priority': 'high',
+            'dueDate': ''
+        },
+        'animated-loader': {
+            'users': [profileUsers['roghaye-safari']],
+            'timeElapsed': '21:32:54 h',
+            'priority': 'low',
+            'dueDate': ''
+        },
+        'email-templates': {
+            'users': [profileUsers['ashley-riley'], profileUsers['jean-mario']],
+            'timeElapsed': '14:29:23 h',
+            'priority': 'low',
+            'dueDate': ''
+        },
+        'design-system': {
+            'users': [profileUsers['meenu-singh'], profileUsers['amelia-eiger'], profileUsers['joe-geller']],
+            'timeElapsed': '35:44:11 h',
+            'priority': 'high',
+            'dueDate': ''
+        },
+        'user-research': {
+            'users': [profileUsers['adisa-duric']],
+            'timeElapsed': '28:02:51 h',
+            'priority': 'high',
+            'dueDate': ''
+        }

@@ -1,0 +1,26 @@
+@import './_variables.scss';
+
+@mixin position-relative-move-bottom($value) {
+    position: relative;
+    bottom: $value;
+}
+
+@mixin position-relative-move-top($value) {
+    position: relative;
+    top: $value;
+}
+
+@mixin position-relative-move-right($value) {
+    position: relative;
+    right: $value;
+}
+
+@mixin position-relative-move-left($value) {
+    position: relative;
+    left: $value;
+}
+
+@mixin adjust-brightness-light-grey($percent) {
+    color: $light-grey;
+    filter: brightness($percent);
+}

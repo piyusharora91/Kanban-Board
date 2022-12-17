@@ -1,0 +1,458 @@
+@import './_variables.scss';
+@import './_placeholders.scss';
+@import './_mixins.scss';
+
+.projects-tracker-container-main {
+    min-height: 100vh;
+    height: max-content;
+    background-color: $off-white;
+}
+
+.basic-info-container-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.page-direction p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.page-title {
+    display: flex;
+    align-items: flex-end;
+
+    #page-heading-editor {
+        background-color: transparent;
+        border: 0;
+        padding: 5px 0px;
+        font-weight: 700;
+        font-size: 22px;
+        width: 180px;
+        @include position-relative-move-top(5px);
+    }
+
+    #page-heading-editor:hover {
+        cursor: pointer;
+    }
+}
+
+.meta-page-info {
+    display: flex;
+    margin-top: 5px;
+
+    span {
+        margin-left: 5px;
+    }
+
+    #active-project {
+        color: $green;
+    }
+
+    .meta-info-section {
+        margin-left: 25px;
+        font-size: 15px;
+
+        width: max-content;
+
+        span {
+            width: 100px;
+        }
+    }
+
+    .meta-info-section:first-child {
+        margin-left: 0px;
+    }
+
+    .meta-info-section:last-child {
+        width: 140px;
+    }
+}
+
+.time-info {
+    display: flex;
+    height: max-content;
+    width: max-content;
+
+    #notify-button {
+        font-size: 20px;
+        padding: 10px;
+        border: 2px solid $primary-button;
+        border-radius: 48%;
+        @include position-relative-move-top(3px);
+        @include position-relative-move-right(12px);
+        color: $primary-button;
+        cursor: pointer;
+    }
+
+    #notify-button:hover {
+        filter: brightness(90%);
+    }
+
+    .time-display-container {
+        display: flex;
+        background: $light-grey;
+        padding: 0px 30px;
+        border-radius: 100px;
+        width: max-content;
+        height: 42px;
+        @include position-relative-move-top(3px);
+
+        #calendar-icon {
+            font-size: 17px;
+            margin-top: 10px;
+            @include position-relative-move-top(2px);
+            @include position-relative-move-right(15px);
+            @include adjust-brightness-light-grey(55%);
+            cursor: pointer;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                margin: 0;
+                padding: 0;
+                @include adjust-brightness-light-grey(55%);
+                font-size: 13px;
+            }
+
+            #title {
+                font-weight: 700;
+            }
+
+            #result {
+                @include position-relative-move-bottom(3px);
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.stat-container-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+    margin-top: 10px;
+
+    .stat-card {
+        border: 1px solid $light-grey;
+        padding: 5px 20px;
+        border-radius: 5px;
+        width: 200px;
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            @include adjust-brightness-light-grey(70%);
+
+            p {
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .stat-card-icon {
+                @include position-relative-move-top(7px);
+            }
+        }
+
+        .card-value {
+            display: flex;
+
+            h1 {
+                margin: 0;
+                font-size: 25px;
+
+                span {
+                    font-size: 15px;
+                    @include position-relative-move-bottom(10px);
+                    @include position-relative-move-left(5px);
+                }
+            }
+        }
+    }
+
+    #earnings-card h1 span,
+    #cost-card h1 span {
+        @include position-relative-move-left(initial);
+        @include position-relative-move-right(1px);
+    }
+
+    #productivity-card {
+
+        .card-header p,
+        .card-header i {
+            color: $blue;
+        }
+
+        .productivity-level-container {
+            display: flex;
+            font-weight: 700;
+            font-size: 14px;
+            color: $green;
+            filter: brightness(80%);
+            @include position-relative-move-top(15px);
+            @include position-relative-move-left(10px);
+
+            p {
+                margin: 0;
+            }
+
+            i {
+                @include position-relative-move-top(10px);
+                @include position-relative-move-right(5px);
+            }
+        }
+    }
+}
+
+.board-container-main {
+    border: 1px solid $light-grey;
+    width: 1100px;
+    margin: auto;
+    margin-top: 25px;
+    user-select: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+
+    .board-header {
+        width: 250px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-size: 20px;
+            font-weight: 900;
+            margin: 15px 0px;
+        }
+
+        button.add-new-task {
+            @extend %button-add-new-task;
+            width: 150px;
+            height: 40px;
+
+            span {
+                @include position-relative-move-bottom(2px);
+            }
+        }
+
+        button.add-new-task:hover {
+            filter: brightness(85%);
+        }
+
+        button.add-new-task:active {
+            scale: 0.99;
+        }
+    }
+
+    .board {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid $light-grey;
+
+        .board-section {
+            display: flex;
+            flex-direction: column;
+            width: 22%;
+            height: 420px;
+            margin: 8px auto;
+            background: #ebebeb;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .board-section-header {
+                font-size: 15px;
+                font-weight: 700;
+                color: $black;
+            }
+
+            .projects-list {
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: 95%;
+                padding: 0px;
+                margin: 0px;
+                @include position-relative-move-top(10px);
+
+                .project-container {
+                    width: 100%;
+                    min-height: 65px;
+                    height: max-content;
+                    border: 1px solid $light-grey;
+                    margin-top: 10px;
+                    border-radius: 6px;
+                    background: $white;
+                    user-select: none;
+
+                    .project-header {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h1 {
+                            font-size: 13px;
+                            margin: 0;
+                            @include position-relative-move-top(2px);
+                            @include position-relative-move-left(10px);
+                        }
+
+                        h1:hover {
+                            @include adjust-brightness-light-grey(60%);
+                        }
+
+                        i {
+                            transform: rotate(90deg);
+                            @include position-relative-move-top(2px);
+                            @include position-relative-move-right(20px);
+                        }
+                    }
+
+                    .project-meta-info-container {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        margin-top: 10px;
+
+                        .project-assignees {
+                            display: flex;
+                            @include position-relative-move-left(7px);
+                            min-width: 100px;
+                            margin-bottom: 10px;
+
+                            .user-profile-image-display {
+                                width: 22px;
+                                height: auto;
+                                border-radius: 50%;
+                                user-drag: none;
+                                -webkit-user-drag: none;
+                                user-select: none;
+                                -moz-user-select: none;
+                                -webkit-user-select: none;
+                                -ms-user-select: none;
+                            }
+
+                            .user-meta-info {
+                                margin-right: 5px;
+                            }
+
+                            .user-initials-display {
+                                @extend %misc-profile-displays;
+                            }
+
+                            .num-players-assigned-left-rendering {
+                                @extend %misc-profile-displays;
+                                width: 15px;
+                                font-size: 10px;
+                            }
+                        }
+
+                        .time-and-priority-container {
+                            display: flex;
+                            @include position-relative-move-right(10px);
+
+                            .time-elapsed-container {
+                                display: flex;
+                                margin-right: 10px;
+
+                                i {
+                                    color: $light-grey;
+                                    @include position-relative-move-top(4px);
+                                    @include position-relative-move-right(5px);
+                                    font-size: 15px;
+                                }
+
+                                .time-elapsed-value {
+                                    margin: 0;
+                                    font-size: 13px;
+                                }
+                            }
+
+                            .priority-container .priority-value {
+                                cursor: initial;
+                                margin: 0;
+                                width: 9px;
+                                height: auto;
+                                padding: 3px;
+                                border-radius: 50%;
+                                transform: rotate(-90deg);
+                                fill: $low-priority;
+                                background: $low-priority-background;
+                            }
+
+                            .priority-container #high {
+                                fill: $high-priority;
+                                background: $high-priority-background;
+                            }
+                        }
+
+                        .project-due-date-container {
+                            display: flex;
+                            border-radius: 5px;
+                            height: 20px;
+                            padding: 0px 5px;
+                            background: $light-purple;
+                            color: $purple;
+                            margin: 1px 0px 8px 10px;
+                            align-items: center;
+
+                            i {
+                                font-size: 12px;
+                            }
+
+                            h1 {
+                                margin: 0;
+                                font-size: 9px;
+                                margin-left: 9px;
+                                @include position-relative-move-bottom(1px);
+
+                                span {
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .project-container:first-child {
+                    margin-top: 0px;
+                }
+            }
+
+            .add-new-task-button-container {
+                margin: auto;
+                @include position-relative-move-top(8px);
+
+                button {
+                    @extend %button-add-new-task;
+                    border: none;
+                    @include adjust-brightness-light-grey(40%);
+
+                    i {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+
+                button:hover {
+                    filter: brightness(65%);
+                }
+            }
+        }
+    }
+}
+
+.hide-project {
+    opacity: 0;
+}

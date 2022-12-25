@@ -8,7 +8,12 @@ import { capitalizeAndRemoveDash } from '../../../../custom-files/textCasingConv
 const DisplayProjectCard = ({ boardSection, project, onDragStart }) => {
     return (
         <div className={`project-container ${boardSection}-project`} id={`${project}-container`}
-            draggable onDragStart={(e) => onDragStart(e, project)}>
+            draggable onDragStart={(e) => {
+                if (e.target.parentNode.classList.contains('project-container'))
+                    console.log(e.target.children)
+                else console.log('else block', e.target.children)
+                onDragStart(e, project)
+            }}>
             {/* project header display starts here */}
             <div className="project-header">
                 <h1 className="project-title">{capitalizeAndRemoveDash(project)}

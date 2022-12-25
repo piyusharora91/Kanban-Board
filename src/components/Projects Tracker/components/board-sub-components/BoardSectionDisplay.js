@@ -5,7 +5,7 @@ import { boardDetailswithProjectsList } from '../../../../custom-files/records.j
 
 const BoardSectionDisplay = ({ boardSection, onDragStart, onDragLeave, onDragOver, dropOnSectionBoard }) => {
     return (
-        <div className="board-section">
+        <div className="board-section" onDragLeave={(e) => onDragLeave(e)}>
             <div className="board-section-header">{capitalizeAndRemoveDash(boardSection)}</div>
             {/* all projects display in a section, code starts here */}
             <div className="projects-list" id={`${boardSection}-section`}

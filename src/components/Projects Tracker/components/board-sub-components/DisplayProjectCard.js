@@ -5,9 +5,10 @@ import DueDateDisplay from './DueDateDisplay.js';
 import { boardDetailswithProjectsList } from '../../../../custom-files/records.js';
 import { capitalizeAndRemoveDash } from '../../../../custom-files/textCasingConversions.js';
 
-const DisplayProjectCard = ({ boardSection, project }) => {
+const DisplayProjectCard = ({ boardSection, project, onDragStart }) => {
     return (
-        <div className={`project-container ${boardSection}-project`} id={`${project}-container`}>
+        <div className={`project-container ${boardSection}-project`} id={`${project}-container`}
+            draggable onDragStart={(e) => onDragStart(e, project)}>
             {/* project header display starts here */}
             <div className="project-header">
                 <h1 className="project-title">{capitalizeAndRemoveDash(project)}

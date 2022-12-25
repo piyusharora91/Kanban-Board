@@ -293,6 +293,7 @@
   width: 100%;
   min-height: 65px;
   height: max-content;
+  cursor: grab;
   border: 1px solid #cccbcb;
   margin-top: 10px;
   border-radius: 6px;
@@ -306,6 +307,7 @@
 .board-container-main .board .board-section .projects-list .project-container .project-header h1 {
   font-size: 13px;
   margin: 0;
+  cursor: pointer;
   position: relative;
   top: 2px;
   position: relative;
@@ -316,6 +318,7 @@
   filter: brightness(60%);
 }
 .board-container-main .board .board-section .projects-list .project-container .project-header i {
+  cursor: pointer;
   transform: rotate(90deg);
   position: relative;
   top: 2px;
@@ -348,6 +351,7 @@
 }
 .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .user-meta-info {
   margin-right: 5px;
+  cursor: pointer;
 }
 .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .project-assignees .num-players-assigned-left-rendering {
   width: 15px;
@@ -357,6 +361,7 @@
   display: flex;
   position: relative;
   right: 10px;
+  height: max-content;
 }
 .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .time-elapsed-container {
   display: flex;
@@ -373,6 +378,7 @@
 .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .time-elapsed-container .time-elapsed-value {
   margin: 0;
   font-size: 13px;
+  cursor: pointer;
 }
 .board-container-main .board .board-section .projects-list .project-container .project-meta-info-container .time-and-priority-container .priority-container .priority-value {
   cursor: initial;
@@ -382,6 +388,7 @@
   padding: 3px;
   border-radius: 50%;
   transform: rotate(-90deg);
+  cursor: pointer;
   fill: #df9774;
   background: #fadacb;
 }

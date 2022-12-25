@@ -288,6 +288,7 @@
                     width: 100%;
                     min-height: 65px;
                     height: max-content;
+                    cursor: grab;
                     border: 1px solid $light-grey;
                     margin-top: 10px;
                     border-radius: 6px;
@@ -301,6 +302,7 @@
                         h1 {
                             font-size: 13px;
                             margin: 0;
+                            cursor: pointer;
                             @include position-relative-move-top(2px);
                             @include position-relative-move-left(10px);
                         }
@@ -310,6 +312,7 @@
                         }
 
                         i {
+                            cursor: pointer;
                             transform: rotate(90deg);
                             @include position-relative-move-top(2px);
                             @include position-relative-move-right(20px);
@@ -342,6 +345,7 @@
 
                             .user-meta-info {
                                 margin-right: 5px;
+                                cursor: pointer;
                             }
 
                             .user-initials-display {
@@ -358,6 +362,7 @@
                         .time-and-priority-container {
                             display: flex;
                             @include position-relative-move-right(10px);
+                            height: max-content;
 
                             .time-elapsed-container {
                                 display: flex;
@@ -373,6 +378,7 @@
                                 .time-elapsed-value {
                                     margin: 0;
                                     font-size: 13px;
+                                    cursor: pointer;
                                 }
                             }
 
@@ -384,6 +390,7 @@
                                 padding: 3px;
                                 border-radius: 50%;
                                 transform: rotate(-90deg);
+                                cursor: pointer;
                                 fill: $low-priority;
                                 background: $low-priority-background;
                             }
